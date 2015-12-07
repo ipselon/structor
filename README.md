@@ -69,7 +69,7 @@ The next time you want to open project in Structor, just go to the folder where 
 To run with different port: ```structor -p <port>```<br/>
 To specify different project's working directory: ```structor -d <path_to_project_dir>```
 
-### How to add own boilerplate to Srtuctor Market
+### How to add own boilerplate to Structor Market
 The source code of all boilerplates wich are presented on Structor Market are located on GitHub. Consequently, you can add to the market the reference of your own Structor compatible boilerplate which exists on GitHub. To do that you have to visit [Structor Market](http://helmetrex.com) and enter the name of repository into add form.
 
 The source code has to be compatible with Structor, to see examples of compatible repositories just visit any of already presented boilerplates. Also please note, in order to have a good looking thumbnail of your project on the market add 'screenshot.png' file with screen shot of the Structor's workspace with your project open.
