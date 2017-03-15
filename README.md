@@ -49,7 +49,7 @@ GroupName/
         index.js
         actions.js
         constants.js
-        reduser.js
+        reducer.js
         selectors.js
 ```
 
