@@ -1,69 +1,42 @@
-Structor - a user interface builder for React
-----------
-
 [![npm version](https://img.shields.io/npm/v/structor.svg?style=flat)](https://www.npmjs.com/package/structor)
 [![npm downloads](https://img.shields.io/npm/dt/structor.svg?style=flat)](https://www.npmjs.com/package/structor)
-[![structor channel on discord](https://img.shields.io/badge/discord-%23structor-0077dd.svg?style=flat)](https://discord.gg/0ZcbPKXt5bWioOhk)
-
-<img src="https://github.com/ipselon/structor/blob/master/images/title-background.png" style="width: 100%;"></img>
 
 
-### Short presentation
-Watch the presentation about how Structor works. This presentation shows all capabilities of Structor as development tool and describe its user interface controls: [How does Structor work ?](http://slides.com/alexanderpustovalov/deck)
+<p align="center">
+  <img width="40%" src="https://raw.githubusercontent.com/ipselon/structor/master/structor-logo-big.png" />
+</p>
 
-### Description
-Structor is former React UI Builder. If you are not familiar with React UI Builder you can watch the video here: [https://www.youtube.com/watch?v=5nqOFSjXKPI](https://www.youtube.com/watch?v=5nqOFSjXKPI).
+<h1 align="center">Structor - React UI Builder</h1>
+<h3 align="center">Install Components&nbsp;&nbsp;>&nbsp;&nbsp;Prototype UI&nbsp;&nbsp;>&nbsp;&nbsp;Generate Source Sode&nbsp;&nbsp;>&nbsp;&nbsp;Build Application</h3>
 
-But, it is better to read the following description and Wiki docs here because the builder has absolutely redesigned look and feel and has a lot of new features.
+<br/>
+<br/>
 
-First of all, I need to mention that Structor is a visual development environment for node.js Web applications with React UI.
+* **Library** - install presets of components from [Structor Market](https://github.com/ipselon/structor-market).
+* **Prototyping** - construct React components of any complexity right on the page.
+* **Scaffolding** - generate scaffolds for React components, Redux containers/reducers/selectors and sagas.
+* **Playground** - develop UI components in isolation from the application using a separate Webpack Dev server with hot-reloading.
 
-The essential part of the builder is a project boilerplate. The boilerplate is a prepacked source code of node.js application in which metainfo included. Using this info Structor knows how to use components included into the package. There is a place where you can download boilerplates - a Structor Market [http://helmetrex.com](http://helmetrex.com).
+### Requirements
 
-It absolutely doesn't mean that you has to strictly follow the rules by which the boilerplate was designed and change the development process you used to follow. Each project is completely hackable and you can change almost everything. For example, if you don't want to use Redux or React Bootstrap in the project you may remove them from the source code. The builder is only the environment which uses metainfo of the project and acts as it was prescripted. 
+[![Join the chat at https://gitter.im/ipselon/structor](https://badges.gitter.im/ipselon/structor.svg)](https://gitter.im/ipselon/structor?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+* NodeJS  > 5
+* Webpack > 2.2.x
+* React > 15.5.4
 
-More about the structure of prepack and how it is used by Structor please read the description of the sample tutorial project here [http://helmetrex.com/details/1567](http://helmetrex.com/details/1567);
+### [Structor's User Guide](https://github.com/ipselon/structor/blob/master/docs/README.md) 
 
-The builder runs as HTTP server with ```webpack-dev-middleware``` + ```webpack-hot-middleware``` + ```react-transform-hmr``` inside.
-So, the builder can be used as an HTTP server with all hot reloading capabilities from the box.
+### Ask Questions
 
-Switching between two modes: edit mode and live-preview mode gives a feeling as if you are creating the Web app right in the browser. And of course, you can edit the source code in your favorite IDE or text editor and don't worry about page reloading (maybe in rear cases).
+[![facebook group](https://img.shields.io/badge/facebook%20group-join-blue.svg?style=social)](https://www.facebook.com/groups/structor/)
 
-Apparently, we can admit that this tool having such features can be used not only in starter prototyping phase of development process, but used during all development process instead of HTTP backend server for Web app.
+<hr/>
 
-### Getting started
+#### Created By
+[Alex Pustovalov](https://twitter.com/alex_pustovalov)
 
-Install Structor in global scope:
-```
-npm install structor -g
-```
-
-Then you have two ways to start working in the builder.
-
-The first way:
-* Create an empty folder on local machine.
-* Enter in this folder and run command: ```structor```.
-* Open the browser and enter the address: ```http://localhost:2222/structor```.
-* Choose suitable prepack (the only one so far) and click clone option.
-* Start composing UI...
-
-The second way:
-* Go to Structor Market [http://helmetrex.com](http://helmetrex.com), choose suitable boilerplate (the only one so far is there).
-* Download package on localhost and unpack it in some empty folder.
-* Enter into this folder and run ```npm install``` command.
-* Once installation is finished run ```structor```.
-* Open the browser and enter the address: ```http://localhost:2222/structor```.
-* Start composing UI...
- 
-The next time you want to open project in Structor, just go to the folder where project is and run ```structor```.
-
-##### Tips
-To run with different port: ```structor -p <port>```<br/>
-To specify different project's working directory: ```structor -d <path_to_project_dir>```
-
-### Discussion
-
-You are welcome to join Discord channel: [#structor](https://discord.gg/0ZcbPKXt5bWioOhk)
+#### Sponsors
+Many thanks to Vlad Magdalin ([@callmevlad](https://twitter.com/callmevlad)) for his support on [Patreon](https://www.patreon.com/ipselon)
 
 #### License
-GNU GENERAL PUBLIC LICENSE Version 3
+Apache License, Version 2.0 (Apache-2.0)
