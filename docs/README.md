@@ -29,10 +29,9 @@
 
 ## Getting started
 
-Structor does not depend on any starter/seed/boilerplate project. It runs even in an empty folder with `package.json`.
+Structor does not depend on any starter/seed/boilerplate project. It even runs in an empty folder with only a `package.json`.
 
-But before you get familiar with Structor we suggest to run through a brief tutorial. 
-This tutorial is using our starter project which lets you quickly try all cool features of Structor.
+Before you get familiar with Structor we suggest that you run through a brief tutorial using our starter project which lets you quickly try out all of the cool features of Structor.
 
 ### Installation
 
@@ -48,7 +47,7 @@ npm install
 ```
 npm install structor
 ```
-* When the prompt is appeared in the command line, choose `app` as a directory where the source code will be located.
+* When the prompt appears in the command line, choose `app` as a directory where the source code will be located.
 ```
 Specify a directory name where the source code of the generated components will be.
 If the directory does not exist in the current project structure it will be created.
@@ -63,47 +62,47 @@ npm run structor
 ```
 http://localhost:2222/structor
 ```
-Now you should see the Structor's workspace. If not, please create an issue.
-
+Now you should see the Structor's workspace. If not, [please create a new issue.
+](https://github.com/ipselon/structor/issues/new)
 <p align="center">
   <img width="60%" src="https://raw.githubusercontent.com/ipselon/structor/master/docs/img/structor-workspace-first-opening.png" />
 </p>
 
 ### Getting familiar with Structor's Workspace
 
-After the first opening you'll see the workspace page. We may call it a page bacause it behaves as the real page in the browser. But there are two modes in the workspace. 
+After opening the address in the browser for the first time, you'll see the workspace page. We call it a page bacause it behaves as the real page in the browser. This page has two modes in the workspace. 
 
-The first mode is an editing mode. In the editing mode we can cut, paste, duplicate, delete, replace, change style of any component on the page. 
+The first mode is an editing mode. In the editing mode we can cut, paste, duplicate, delete, replace, and change style of any component on the page. 
 
-> __On a separate note__, we should understand what is a component and component model in terms of the Structor's workspace. The page in the workspace consists of multiple React components. Although, the page is not a React component itself, as you may thought, the page is just a tree of components models which are written in JSON. See detailed explanation of what is a component model in section [A component model](https://github.com/ipselon/structor/blob/master/docs/designing-ui.md#a-component-model) of this guide.
+> __On a separate note__, we should understand what is a component and component model in terms of the Structor's workspace. The page in the workspace consists of multiple React components. Although the page is not a React component itself, as you may have thought, the page is just a tree of component models which are written in JSON. See a detailed explanation of what is a component model in section [A component model](https://github.com/ipselon/structor/blob/master/docs/designing-ui.md#a-component-model) of this guide.
 
-The second mode is a preview mode. In the preview mode you are able to see how page looks and try how it works in the browser.
+The second mode is a preview mode. In the preview mode you are able to see how the page looks and try how it works in the browser.
 
-On the left vertical toolbar you may find two buttons which are responsible for switching between modes:
+On the left vertical toolbar you will find two buttons which are responsible for switching between modes:
 
 <p align="left">
   <img width="30%" src="https://raw.githubusercontent.com/ipselon/structor/master/docs/img/structor-workspace-mode-switch-btns.png" />
 </p>
 
-On this stage of the tutorial the current page should be in the edit mode. If not, please set the edit mode on.
+On this stage of the tutorial the current page should be in the edit mode. If not, please enter edit mode.
 
 ### Installing component presets
 
-However we can work in Structor with only those components which are shipped with Structor distribution, in this tutorial we will install a package of [Material UI](https://github.com/ipselon/mui-next-spkg) components from [Structor Market](https://github.com/ipselon/structor-market).
+While we can work in Structor with only the default components which are shipped with Structor distribution, in this tutorial we will install the [Material UI](https://github.com/ipselon/mui-next-spkg) components from [Structor Market](https://github.com/ipselon/structor-market) package.
 
-Activate a library button with plus icon as it is shown on the screenshot below. The library panel shows the groups of available components in the current project. Find the `Install` button at the top of the left-side panel and click on it.
+Display the library panel by clicking on the plus icon as it is shown on the screenshot below. The library panel shows the groups of available components in the current project. Find the `Install` button at the top of the left-side panel and click on it.
 
 <p align="center">
   <img width="70%" src="https://raw.githubusercontent.com/ipselon/structor/master/docs/img/first-tutorial-open-library.png" />
 </p>
 
-We are forwarded to the Structor Market gallery, here we can see what packages of component presets are avaialble to install. Let's install a `mui-next-spkg` package, which includes components from the next version of Material UI lib.
+We are forwarded to the Structor Market gallery, here we can see what packages of component presets are avaialble to install. Let's install the `mui-next-spkg` package, which includes components from the next version of Material UI lib.
 
 <p align="center">
   <img width="70%" src="https://raw.githubusercontent.com/ipselon/structor/master/docs/img/first-tutorial-install-package.png" />
 </p>
 
-Installation process will take some time because Structor installs dependencies via npm. Once package is installed we will see new pages in the workspace and new groups of components. Just try to open other pages using the page selector component in the top toolbar.
+Installation process will take some time because Structor installs dependencies via npm. Once the package is installed we will see new pages in the workspace and new component groups. Test out the different components using the page selector component in the top toolbar to open other pages.
 
 <p align="center">
   <img width="70%" src="https://raw.githubusercontent.com/ipselon/structor/master/docs/img/first-tutorial-page-switcher.png" />
@@ -111,41 +110,41 @@ Installation process will take some time because Structor installs dependencies 
 
 ### Composing a new component
 
-Let's start to compose something interesting. Make sure that the current page is `/home` page and click somewhere on the text in the center of the page. You'll see that a border appeared around some area - it means that you selected a component. There is a few ways to understand what the component is selected now.
+Let's start to compose something interesting. Make sure that the current page is set to `/home` and click on the text in the center of the page. You'll see that a border appears around the text to highlight it—it means that you selected a component. There are a several other ways find which component is currently selected.
 
-We may find it in a breadcrumbs control at the top of the workspace as it is shown on the screenshot below. Or you can take a look at the context menu which appeared at the place you clicked right mouse button. 
+The breadcrumb menu which appears next to the page selector menu on the right, shown in the screenshot below.
 
 <p align="center">
   <img width="70%" src="https://raw.githubusercontent.com/ipselon/structor/master/docs/img/first-tutorial-breadcrumbs.png" />
 </p>
 
-Additionally, there is a more common method which will show us the entire structure of the page. There is a bottom panel with the components tree on the current page. Click on the button with code icon on the left vertical toolbar as it is shown on the screenshot below.
+And the more common method which shows the entire structure of the page. There is a bottom panel with the component tree of the current page. Click on the button with code icon (`</>`) on the left vertical toolbar as it is shown on the screenshot below.
 
 <p align="center">
   <img width="70%" src="https://raw.githubusercontent.com/ipselon/structor/master/docs/img/first-tutorial-treeview-panel.png" />
 </p>
 
-> __Note__ Moving mouse cursor around on the page will show us a boundaries of components which we are able to select. 
+> __Note__ Moving the mouse cursor around on the page will show us the boundaries of components which we are hovering over and are able to select. 
 
-Now let's place the some components from library onto the page.
+Now let's place the some components from the library onto the page.
 
 There is a requirement in the Material UI lib to place `MuiThemeProvider` as a root component of any MUI components combination. So, we can find a `ThemeProvider` component in the `MUI` group (this is a wrapper of `MuiThemeProvider` here) and place it as a container for our future combination. 
 
-Just open the `MUI` group in the library panel and click on `ThemeProvider` item in the list. We will see that there is a sublist. The sublist in the library shows that this component has several models. Let's click on `default` model and see that `ThemeProvider` component's model was copied to clipboard.
+Open the `MUI` group in the library panel and click on `ThemeProvider` item in the list. We will see that there is a sublist. The sublist in the library shows that this component has several models. Let's click on `default` model and observe that the `ThemeProvider` component's model was copied to clipboard.
 
-Now we have to replace `h3` component in the tree with the component from clipboard. If you do not have `h3` selected, select it by clicking on it on the page or just select on the treeview (or in the breadcrumbs control).
+Now we will replace the `h3` component in the tree with the `ThemProvider` component in the clipboard. Ensure that you have the `h3` component selected.
 
 <p align="center">
   <img width="70%" src="https://raw.githubusercontent.com/ipselon/structor/master/docs/img/first-tutorial-add-component.png" />
 </p>
 
-Then find `Replace` button in the top toolbar, or click right mouse and hit a `Replace` button in the context menu.
+Then find and click the `Replace` button in the top toolbar, or click right mouse and click the `Replace` button in the context menu.
 
 <p align="center">
   <img width="70%" src="https://raw.githubusercontent.com/ipselon/structor/master/docs/img/first-tutorial-replace-buttons.png" />
 </p>
 
-As the result we will have the composition as it is shown on the screenshot below.
+The `Replace` button replaces the currently selected component (`h3`) with the component in our clipboard (`ThemeProvider`). The composition is shown in the screenshot below.
 
 <p align="center">
   <img width="70%" src="https://raw.githubusercontent.com/ipselon/structor/master/docs/img/first-tutorial-component-replaced.png" />
